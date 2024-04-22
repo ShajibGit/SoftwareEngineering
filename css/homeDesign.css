@@ -311,7 +311,7 @@ ul{
 }
 
 .footer{
-    background-image: url("footer-bg 5.png");
+    background-image: url("footer/footer-bg 5.png");
     height: 600px;
     margin-bottom: 0px;
     object-fit: fill;
