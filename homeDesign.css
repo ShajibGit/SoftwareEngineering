@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    margin-bottom: 30px;
+    margin-right: -50px;
+}
+
+.background-vid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+}
+
+li{
+    display: inline-flex;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #208824;
+}
+
+ul{
+    text-align: center;
+}
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.green-line-left{
+    width: 2000px;
+    height: 10px;
+    background-color: #208824;
+    margin-top: -15px;
+    display: flex;
+}
+
+.black-line-center{
+    background-color: black;
+    width: 1500px;
+    height: 10px;
+    margin-top: -10px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.schoolBanner{
+    height: 105px;
+    background-color: #F8F8F8;
+    position: fixed;
+    width: 100%;
+}
+
+.schoolLogo{
+    margin-left: 360px;
+}
+
+.schoolName{
+    font-family: "DM Serif Text", sans-serif;
+    margin-top: -75px;
+    margin-left: 490px;
+    font-size: 19px;
+}
+
+.adr{
+    text-align: right;
+    margin-top: -55px;
+    margin-left: 800px;
+    font-size: 19px;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.address{
+    text-align: center;
+}
+
+.linegap-green{
+    height: 10px;
+    background-color: #208824;
+    margin-top: 10px;
+    display: flex;
+}
+
+.latest-news{
+    height: 600px;
+    background-color: #D0D0D0;
+    margin-top: 10px;
+}
+
+.news-Title h1{
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: -50px;
+}
+
+.undernews-Title{
+    height: 5px;
+    width: 70px;
+    background-color: black;
+    margin-left: 380px;
+    margin-top: -450px;
+}
+
+.news-1, .event-1{
+    margin-left: 380px;
+    margin-top: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.news-1-descr, .event-1-descr{
+    margin-left: 380px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.news-2, .event-2{
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 780px;
+    margin-top: -340px;
+}
+
+.news-2-descr, .event-2-descr{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 780px;
+    margin-top: -64.5px;
+    font-size: 15px;
+}
+
+.news-3, .event-3{
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 1180px;
+    margin-top: -330px;
+}
+
+.news-3-descr, .event-3-descr{
+    margin-left: 1280px;
+    margin-top: -62.5px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    border: 1px solid black;
+    background-color: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border-width: 3px;
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 20px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn1{
+    color: black;
+}
+
+.btn1:hover{
+    color: white;
+    background-color: #208824;
+}
+
+.what-students-say{
+    height: 640px;
+    background-color: #EDECEC;
+    margin-top: 60px;
+}
+
+.title-what-student-say{
+    text-align: center;
+    margin-top: -524px;
+    font-size: 48px;
+}
+
+.mini-description{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+}
+
+.reviews{
+    width: 510px;
+    height: 191px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-top: 70px;
+}
+
+.student-1{
+    font-family: "Open Sans" sans-serif;
+    margin-right: 70px;
+}
+
+.student-descr-1{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.student-1-name{
+    color: #208824;
+}
+
+.reviews-2{
+    width: 510px;
+    height: 191px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 570px;
+    margin-top: -165px;
+}
+
+.student-descr-2{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.rating-1{
+    margin-top: -30px;
+    margin-right: 140px;
+    color: orange;
+    font-size: 30px;
+}
+
+.rating-2{
+    color: orange;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: -210px;
+}
+
+.linegap-green-2{
+    margin-top: 180px;
+    background-color: #208824;
+    height: 10px;
+}
+
+.linegap-black-1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: black;
+    height: 10px;
+}
+
+.events{
+    height: 600px;
+    background-color: #D0D0D0;
+}
+
+.linegap-green-3{
+    margin-top: 80px;
+    background-color: #208824;
+    height: 10px;
+}
+
+.linegap-black-2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: black;
+    height: 5px;
+}
+
+.footer{
+    background-image: url("C:/Users/HP/Desktop/EPCST Website Homepage/images/footer-bg 5.png");
+    height: 600px;
+    margin-bottom: 0px;
+    object-fit: fill;
+}
+
+.img-2{
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 880px;
+}
+
+.footer-schoolname{
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1{
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+} 
+
+.connect{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta{
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2{
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+} 
+
+.footer-nav{
+    margin-top: 90px;
+}
+
+.footer-nav li{
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 0px;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.all-rights-reserved{
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
