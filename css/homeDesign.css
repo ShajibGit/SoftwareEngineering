@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .header{
@@ -11,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .content{
@@ -81,25 +81,29 @@ ul{
     background-color: #F8F8F8;
     position: fixed;
     width: 100%;
+    display: inline-flex;
 }
 
 .schoolLogo{
     margin-left: 360px;
+    display: flex;
 }
 
 .schoolName{
     font-family: "DM Serif Text", sans-serif;
-    margin-top: -75px;
-    margin-left: 490px;
+    margin-top: 20px;
+    margin-left: 30px;
     font-size: 19px;
+    display: flex;
 }
 
 .adr{
     text-align: right;
-    margin-top: -55px;
-    margin-left: 800px;
+    margin-top: 20px;
+    margin-left: 600px;
     font-size: 19px;
     font-family: "DM Serif Text", sans-serif;
+    display: flex;
 }
 
 .address{
@@ -117,12 +121,14 @@ ul{
     height: 600px;
     background-color: #D0D0D0;
     margin-top: 10px;
+    display: flex;
 }
 
 .news-Title h1{
     font-size: 30px;
     margin-left: 380px;
     margin-top: -50px;
+    display: flex;
 }
 
 .undernews-Title{
@@ -183,7 +189,7 @@ ul{
     font-size: 15px;
 }
 
-.container{
+.container, .container-2{
     text-align: center;
 }
 
@@ -297,6 +303,26 @@ ul{
     background-color: #D0D0D0;
 }
 
+.event-Title h1{
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: -50px;
+    display: flex;
+}
+
+.event-1-descr{
+    margin-left: 400px;
+}
+
+.event-2-descr{
+    margin-left: 826px;
+}
+
+.event-3-descr{
+    margin-left: 1220px;
+}
+
+
 .linegap-green-3{
     margin-top: 80px;
     background-color: #208824;
@@ -385,4 +411,230 @@ ul{
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
+}
+
+.profile-pic-1{
+    margin-top: 15px; 
+    margin-right: 330px;
+}
+
+.footer-navbar{
+    justify-content: center;
+}
+
+@media only screen and (max-width: 412px), screen and (max-height: 915px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    .schoolBanner{
+       width: 93%;
+    } 
+    .schoolLogo{
+        margin-left: 150px;
+    }
+
+    .schoolName, .adr, .green-line-left, .black-line-center{
+        display: none;
+    }
+
+    li{
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    ul{
+        text-align: left;
+    }
+    
+    .nav-bar{
+        position: fixed;
+        width: 93%;
+        background-color: black;
+        padding-top: 10px;
+        margin-top: 105px;
+    }
+    
+    .content{
+        font-size: 1px;
+        margin-right:80px;
+    }
+    
+    .latest-news{
+        height: 1500px;
+        background-color: #D0D0D0;
+        margin-top: 10px;
+    }
+
+    .news-Title{
+        margin-top: -1300px;
+        margin-left: -350px;
+        margin-bottom: 50px;
+    }
+
+    .news-2, .event-2{
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 380px;
+        margin-top: -5px;
+    }
+
+    .news-2-descr{
+        color: black;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 380px;
+        margin-top: -3px;
+        font-size: 15px;
+    }
+    
+    .news-3, .event-3{
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 380px;
+        margin-top: -10px;
+    }
+    
+    .news-3-descr {
+        margin-left: 480px;
+        margin-top: -5px;
+        color: black;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .undernews-Title{
+        display: none;
+    }
+
+    .btn{
+        margin-left: 350px;
+    }
+
+    .event-1{
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+    .event-2{
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+
+    .event-3{
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+
+    .event-Title h1{
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: -1250px;
+        display: flex;
+    }
+
+    .events{
+        height: 1300px;
+    }
+
+    .reviews{
+        margin-left: 20px;
+        margin-top: 30px;
+        height: 250px;
+        width: 370px;
+    }
+
+    .reviews-2{
+        display: none;
+    }
+    
+    .student-descr-2{
+        display: none;
+    }
+    
+    .rating-1{
+        margin-top: -30px;
+        margin-right: 190px;
+        color: orange;
+        font-size: 30px;
+        margin-left: 80px;
+    }
+    
+    .rating-2{
+        display: none;
+    }
+
+    .student-descr-1{
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        font-size: 5px;
+    }
+
+    .student-1-name{
+        color: #208824;
+        margin-left: 50px;
+    }
+
+    .profile-pic-1{
+        margin-left: 25px;
+    }
+    
+    .btn2{
+        color: black;
+        margin-left: -45px;
+    }
+
+    .event-1-descr{
+        margin-left: 60px;
+    }
+
+    .event-2-descr{
+        margin-left: 80px;
+        margin-top: 1px;
+    }
+
+    .event-3-descr{
+        margin-left: 80px;  
+        margin-top: 1px; 
+    }
+
+    .img-2{
+        margin-top: 50px;
+        border: 1px solid white;
+        border-radius: 30px;
+        background-color: white;
+        margin-left: 140px;
+    }
+
+    .white-line-1{
+        margin-left: 70px;
+    }
+
+    .white-line-2{
+        margin-left: 115px;
+    }
+
+    .insta{
+        margin-left: 140px;
+    }
+
+    .footer-nav{
+        display: none;
+    }
+    
+    .footer-nav li{
+       display: none;
+    }
+
+    .all-rights-reserved{
+        margin-top: 80px;
+    }
 }

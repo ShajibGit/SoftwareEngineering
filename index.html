@@ -16,15 +16,23 @@
         }
 
         .footer{
-            background-image: url("footer/footer-bg 5.png");
-            height: 600px;
-            margin-bottom: 0px;
-            object-fit: fill;
+           background-image: url("footer/footer-bg 5.png");
+           height: 600px;
+           margin-bottom: 0px;
+           object-fit: fill;
         }
 
         .checked {
             color: orange;
             height: 10px;
+        }
+        @media only screen and (max-width: 412px), screen and (max-height: 915px){
+        .footer{
+           background-image: url("footer/footer-bg 5.png");
+           height: 680px;
+           margin-bottom: 0px;
+           object-fit: fill;
+        }
         }
     </style>
 </head>
@@ -105,7 +113,7 @@
 
         <div class="reviews">
             <div class="student-1">
-                <img src="images/student1-profile.jpg" alt="student-1-profiel" style="height: 44px; width: 44px; border-radius: 30px; margin-top: 15px; margin-right: 330px;">
+                <img src="images/student1-profile.jpg" alt="student-1-profiel" style="height: 44px; width: 44px; border-radius: 30px;" class="profile-pic-1">
                 <h2 style="font-size: 24px; text-decoration: none; margin-top: -38px; margin-right: 22px;" class="student-1-name">Ray Leonard Mamuad</h2>
                 <p style="font-size: 14.2px; margin-left: 90px;" class="student-descr-1">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
                 <div class="rating-1">
@@ -134,26 +142,25 @@
     <div class="linegap-black-1"></div>
 
     <!--BACKGROUND-->
-    <div class="events">
-    </div>
+    <div class="events"></div>
 
     <div class="undernews-Title"></div>
-    <div class="news-Title">
+    <div class="event-Title">
         <h1 style="margin-bottom: -50px;">EVENTS</h1>
         <a href="#"><img src="images/Event1.jpg" alt="News-#1" style="height: 230px; width: 340px;" class="event-1">
-            <p class="event-1-descr" style="margin-left: 400px;">EASTWOODS MUSIC Festival with NOBITA</p>
+            <p class="event-1-descr">EASTWOODS MUSIC Festival with NOBITA</p>
         </a>
 
         <a href="#"><img src="images/Event2.jpg" alt="News-#2" style="height: 230px; width: 340px;" class="event-2">
-            <p class="event-2-descr" style="margin-left: 820px;">1st GRAND Alumni HOMECOMING</p>
+            <p class="event-2-descr">1st GRAND Alumni HOMECOMING</p>
         </a>
 
         <a href="#"><img src="images/Event3.jpg" alt="News-#3" style="height: 230px; width: 340px;" class="event-3">
-            <p class="event-3-descr" style="margin-left: 1220px;">1st GRAND Alumni HOMECOMING</p>
+            <p class="event-3-descr">1st GRAND Alumni HOMECOMING</p>
         </a>
 
-        <div class="container">
-            <button class="btn btn1">SHOW MORE</button>
+        <div class="container-2">
+            <button class="btn btn2">SHOW MORE</button>
         </div>
     </div>
 
