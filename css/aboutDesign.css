@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: merriweather;
+
+}
+
+.schoolBanner {
+    height: 105px;
+    background-color: #F8F8F8;
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.green-line-left{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 0;
+}
+.green-line-right{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 1550px;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav a:hover {
+    background-color: green;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+nav svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    padding-top: 8px;
+    display: none;
+}
+
+.schoolLogo {
+    margin-left: 360px;
+    display: flex;
+}
+
+.schoolName {
+    font-family: "DM Serif Text", sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 19px;
+    display: flex;
+}
+
+.adr {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 600px;
+    font-size: 19px;
+    font-family: "DM Serif Text", sans-serif;
+    display: flex;
+}
+
+.address {
+    text-align: center;
+}
+
+.about-cover {
+    height: 600px;
+    display: flex;
+}
+
+.title-about {
+    margin-top: -120px;
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "DM Serif Text", sans-serif;
+    color: white;
+}
+
+.vertical-line {
+    height: 40px;
+    width: 4px;
+    background-color: #208824;
+    margin-top: -50px;
+    margin-left: 180px;
+}
+
+.about-gray-box {
+    height: 600px;
+    background-color: #D0D0D0;
+    margin-top: 59px;
+}
+
+.school-picture {
+    height: 295px;
+    width: 1000px;
+    margin-top: -550px;
+    margin-left: 180px;
+    display: flex;
+}
+
+.history-school {
+    height: 179px;
+    width: 1000px;
+    margin-left: 180px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+}
+
+.glance-title {
+    background-color: #208824;
+    height: 45px;
+    width: 270px;
+    margin-left: 1400px;
+    margin-top: -500px;
+}
+
+.glance-title-text {
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: white;
+}
+
+.glance-img {
+    width: 270px;
+    height: 90px;
+    margin-left: 1400px;
+    margin-top: 20px;
+}
+
+.texts-1 {
+    margin-left: 1400px;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.texts-2 {
+    margin-left: 1400px;
+    width: 270px;
+    margin-top: 10px;
+}
+
+.texts-3 {
+    margin-left: 1400px;
+    width: 270px;
+    margin-top: 10px;
+}
+
+.img-2 {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 880px;
+}
+
+.footer-schoolname {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1 {
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+}
+
+.connect {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta {
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2 {
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+}
+
+.footer-nav {
+    margin-top: 80px;
+}
+
+.footer-nav li {
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 0px;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.all-rights-reserved {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+
+.footer-navbar {
+    justify-content: center;
+}
+
+.green-border-gap {
+    height: 5px;
+    background-color: #208824;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.black-border-title {
+    height: 45px;
+    background-color: black;
+    width: 100%;
+
+}
+
+.mission-title,
+.vision-title {
+    font-size: 30px;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%;
+    padding-left: 22%;
+
+}
+
+.mission-vision-content {
+    background-color: #F8F8F8;
+}
+
+.mission,
+.vision {
+    color: black;
+    width: 49.85%;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-flex;
+    padding: 30px 100px 30px 100px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.vertical-black-bar {
+    background-color: black;
+    height: 250px;
+    width: 5px;
+    align-items: center;
+    margin-left: 896.5px;
+    margin-top: -250px;
+}
+
+
+.mission-vision-content :nth-child(1):hover {
+    background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+    transition: 0.3s;
+    color: white;
+    font-size: 22px;
+}
+
+.mission-vision-content :nth-child(2):hover {
+    background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+    transition: 0.3s;
+    color: white;
+    font-size: 22px;
+}
+
+.green-border-gap-2 {
+    height: 5px;
+    background-color: #208824;
+}
+
+.black-border-title {
+    height: 45px;
+    background-color: black;
+}
+
+.east-hymn {
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 30px;
+    margin-left: 815px;
+}
+
+.east-hymn-content-box {
+    background-color: #378b29;
+    background-image: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+    height: 680px;
+}
+
+.hymn-lyrics {
+    text-align: center;
+    margin-top: -650px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "Open Sans" sans-serif;
+
+}
+
+.linegap-green-3 {
+    margin-top: 0px;
+    background-color: #208824;
+    height: 10px;
+}
+
+.linegap-black-2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: black;
+    height: 30px;
+}
+
+
+.footer-schoolname {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1 {
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+}
+
+.connect {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta {
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2 {
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.foot-nav li{
+    display: inline;
+    margin-right: 2px;
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.foot-nav a{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-family: 13px;
+    font-weight: 600;
+}
+
+.foot-nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+.foot-nav{
+    margin-left: 80px;
+}
+
+.foot-nav li:last-child {
+    border-right: none;
+}
+
+.all-rights-reserved {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    margin-left: 70px;
+}
+
+
+@media only screen and (min-width: 1875px) {
+    .vertical-black-bar {
+        margin-left: 950px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+
+    .schoolName {
+        display: none;
+    }
+
+    .adr {
+        display: none;
+    }
+
+    .address {
+        display: none;
+    }
+
+    .schoolName {
+        display: none;
+    }
+
+    .schoolBanner {
+        display: none;
+    }
+
+    .about-cover {
+        height: 100vh;
+        border: 3px solid rgb(112, 33, 158);
+
+    }
+
+    .title-about {
+        margin-left: 30px;
+        margin-top: -50px;
+        font-weight: 400;
+        font-size: 25px;
+        font-family: "DM Serif Text", sans-serif;
+        color: white;
+        border: 2px solid red;
+
+    }
+
+    .vertical-line {
+        height: 30px;
+        width: 4px;
+        background-color: #208824;
+        margin-top: -50px;
+        margin-left: 120px;
+        border: 2px solid red;
+
+    }
+
+    .about-gray-box {
+        height: 600px;
+        background-color: #D0D0D0;
+        margin-top: 0px;
+        border: 2px solid red;
+
+    }
+
+    .school-picture {
+        height: 300px;
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 0px;
+        display: block;
+        border: 2px solid red;
+
+    }
+
+    .history-school {
+        height: 100px;
+        width: 100px;
+        margin-left: 180px;
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        display: block;
+        border: 2px solid red;
+
+    }
+
+    .glance-title {
+        background-color: #208824;
+        height: 45px;
+        width: 270px;
+        margin-left: 0px;
+        margin-top: 0px;
+        display: block;
+        border: 2px solid red;
+    }
+
+    .glance-title-text {
+        font-family: "DM Serif Text", sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 5px;
+        color: white;
+        border: 2px solid red;
+    }
+
+    .glance-img {
+        width: 270px;
+        height: 90px;
+        margin-left: 0px;
+        margin-top: 20px;
+        border: 2px solid red;
+    }
+
+    .texts-1 {
+        margin-left: 0px;
+        width: 100px;
+        margin-top: 30px;
+        border: 2px solid red;
+    }
+
+    .texts-2 {
+        margin-left: 0px;
+        width: 100px;
+        margin-top: 10px;
+        border: 2px solid red;
+    }
+
+    .texts-3 {
+        margin-left: 0px;
+        width: 100px;
+        margin-top: 10px;
+        border: 2px solid red;
+    }
+
+    .img-2 {
+        margin-top: 50px;
+        border: 1px solid white;
+        border-radius: 30px;
+        background-color: white;
+        margin-left: 0px;
+        border: 2px solid red;
+    }
+
+    .footer-schoolname {
+        font-size: 19px;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: "DM Serif Text", sans-serif;
+        font-weight: 16px;
+        border: 2px solid red;
+    }
+
+    .white-line-1 {
+        border: 2px solid white;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        border: 2px solid red;
+    }
+
+    .connect {
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+        border: 2px solid red;
+
+    }
+
+    .insta {
+        margin-left: 0px;
+        margin-top: 20px;
+        border: 2px solid red;
+    }
+
+    .fb {
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 2px solid red;
+    }
+
+    .yt {
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 2px solid red;
+    }
+
+    .white-line-2 {
+        border: 1px solid white;
+        width: 20%;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 90px;
+        border: 2px solid red;
+    }
+
+    .footer-nav {
+        margin-top: 80px;
+        border: 2px solid red;
+    }
+
+    .footer-nav li {
+        text-align: center;
+        margin-right: 3px;
+        margin-left: 0px;
+        border-right: 1px solid white;
+        display: inline-block;
+        padding: 0 15px;
+        border: 2px solid red;
+    }
+
+    .all-rights-reserved {
+        text-align: center;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        border: 2px solid red;
+    }
+
+    .footer-navbar {
+        justify-content: center;
+        border: 2px solid red;
+    }
+
+    .green-border-gap {
+        height: 5px;
+        background-color: #208824;
+        margin-top: 150px;
+        width: 99%;
+        border: 2px solid red;
+    }
+
+    .black-border-title {
+        height: 25px;
+        background-color: black;
+        width: 99%;
+        border: 2px solid red;
+
+    }
+
+    .mission-title,
+    .vision-title {
+        display: inline;
+        align-items: right;
+        justify-content: right;
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 25px;
+        border: 2px solid red;
+    }
+
+    .mission-vision-content {
+        background-color: #F8F8F8;
+        border: 2px solid rgb(80, 28, 28);
+
+    }
+
+    .mission,
+    .vision {
+        color: black;
+        width: 5%;
+        font-weight: 400;
+        font-size: 17px;
+        display: inline-flex;
+        padding: 0px 0px 0px 0px;
+        text-align: justify;
+        margin-top: 0px;
+        border: 2px solid rgb(180, 58, 58);
+
+    }
+
+    .vertical-black-bar {
+        background-color: black;
+        height: 50px;
+        width: 5px;
+        align-items: center;
+        margin-left: 0;
+        margin-top: -250px;
+        border: 2px solid rgb(3, 97, 27);
+
+    }
+
+
+    .mission-vision-content :nth-child(1):hover {
+        background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+        transition: 0.3s;
+        color: white;
+        font-size: 18px;
+    }
+
+    .mission-vision-content :nth-child(2):hover {
+        background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+        transition: 0.3s;
+        color: white;
+        font-size: 18px;
+    }
+
+    .green-border-gap-2 {
+        height: 5px;
+        background-color: #208824;
+        border: 2px solid red;
+
+    }
+
+    .black-border-title {
+        height: 45px;
+        background-color: black;
+        border: 2px solid red;
+
+    }
+
+    .east-hymn {
+        color: white;
+        font-family: "DM Serif Text", sans-serif;
+        font-size: 25px;
+        margin-left: 0px;
+        text-align: center;
+        justify-content: center;
+        border: 2px solid red;
+
+    }
+
+    .east-hymn-content-box {
+        background-image: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+        height: 100vh;
+        border: 2px solid red;
+
+    }
+
+    .hymn-lyrics {
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        font-size: 0px;
+        border: 2px solid red;
+
+    }
+
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        display: none;
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.8s ease-out;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        margin-top: 0px;
+        padding-right: 20px;
+
+    }
+
+    nav a:hover {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .open-sidebar-button,
+    .close-sidebar-button {
+        display: block;
+    }
+
+    #sidebar-active:checked~.links-container {
+        display: flex;
+    }
+
+    .open-sidebar-button{
+        padding-top: 8px;
+        padding-left: 85%;
+    }
+    .close-sidebar-button{
+        padding-left: 80%;
+
+    }
+
+    .green-line-right{
+        display: none;
+    }
+
+    .green-line-left{
+        display: none;
+    }
+}
