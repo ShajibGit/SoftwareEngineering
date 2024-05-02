@@ -1,19 +1,125 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
+html {
+    font-size: 16px;
+    font-family: merriweather;
+
+}
+
+.schoolBanner {
+    height: 105px;
+    background-color: #F8F8F8;
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.green-line-left{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 0;
+}
+.green-line-right{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 1550px;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    position:fixed ;
+    width: 100%;
+    margin-top: 100px;
+}
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Open Sans" sans-serif;
+}
+
+nav a:hover {
+    background-color: green;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+nav svg {
+    fill : white;
+}
+
+.green-line{
+    color: #208824;
+    height: 5px;
+    margin-top: -20px;
+    width: 40px;
+    position: absolute;
+}
+
+#sidebar-active {
+    display : none;
+    
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    padding-top: 8px;
+    display: none;
+}
+
+.header {
     width: 100%;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.content{
+.content {
     text-align: center;
 }
 
@@ -23,7 +129,7 @@
     margin-right: -50px;
 }
 
-.background-vid{
+.background-vid {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -31,65 +137,12 @@
     display: flex;
 }
 
-li{
-    display: inline-flex;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    margin-right: 50px;
-}
-
-a{
-    color: white;
-}
-
-a:hover{
-    color: #208824;
-}
-
-ul{
-    text-align: center;
-}
-
-.nav-bar{
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    padding-top: 10px;
-    margin-top: 100px;
-    display: flex;
-}
-
-.green-line-left{
-    width: 2000px;
-    height: 10px;
-    background-color: #208824;
-    margin-top: -15px;
-    display: flex;
-}
-
-.black-line-center{
-    background-color: black;
-    width: 1500px;
-    height: 10px;
-    margin-top: -10px;
-    margin-left: 200px;
-    display: flex;
-}
-
-.schoolBanner{
-    height: 105px;
-    background-color: #F8F8F8;
-    position: fixed;
-    width: 100%;
-    display: inline-flex;
-}
-
-.schoolLogo{
+.schoolLogo {
     margin-left: 360px;
     display: flex;
 }
 
-.schoolName{
+.schoolName {
     font-family: "DM Serif Text", sans-serif;
     margin-top: 20px;
     margin-left: 30px;
@@ -97,7 +150,7 @@ ul{
     display: flex;
 }
 
-.adr{
+.adr {
     text-align: right;
     margin-top: 20px;
     margin-left: 600px;
@@ -106,32 +159,32 @@ ul{
     display: flex;
 }
 
-.address{
+.address {
     text-align: center;
 }
 
-.linegap-green{
+.linegap-green {
     height: 10px;
     background-color: #208824;
     margin-top: 10px;
     display: flex;
 }
 
-.latest-news{
+.latest-news {
     height: 600px;
     background-color: #D0D0D0;
     margin-top: 10px;
     display: flex;
 }
 
-.news-Title h1{
+.news-Title h1 {
     font-size: 30px;
     margin-left: 380px;
     margin-top: -50px;
     display: flex;
 }
 
-.undernews-Title{
+.undernews-Title {
     height: 5px;
     width: 70px;
     background-color: black;
@@ -139,14 +192,16 @@ ul{
     margin-top: -450px;
 }
 
-.news-1, .event-1{
+.news-1,
+.event-1 {
     margin-left: 380px;
     margin-top: 100px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.news-1-descr, .event-1-descr{
+.news-1-descr,
+.event-1-descr {
     margin-left: 380px;
     color: black;
     font-family: "Open Sans", sans-serif;
@@ -155,14 +210,16 @@ ul{
     font-size: 15px;
 }
 
-.news-2, .event-2{
+.news-2,
+.event-2 {
     object-fit: cover;
     border-radius: 20px;
     margin-left: 780px;
     margin-top: -340px;
 }
 
-.news-2-descr, .event-2-descr{
+.news-2-descr,
+.event-2-descr {
     color: black;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
@@ -172,14 +229,16 @@ ul{
     font-size: 15px;
 }
 
-.news-3, .event-3{
+.news-3,
+.event-3 {
     object-fit: cover;
     border-radius: 20px;
     margin-left: 1180px;
     margin-top: -330px;
 }
 
-.news-3-descr, .event-3-descr{
+.news-3-descr,
+.event-3-descr {
     margin-left: 1280px;
     margin-top: -62.5px;
     color: black;
@@ -189,11 +248,12 @@ ul{
     font-size: 15px;
 }
 
-.container, .container-2{
+.container,
+.container-2 {
     text-align: center;
 }
 
-.btn{
+.btn {
     border: 1px solid black;
     background-color: none;
     padding: 10px 40px;
@@ -206,35 +266,41 @@ ul{
     margin-top: 20px;
 }
 
-.btn1{
+.btn1,
+.btn2 {
     color: black;
 }
 
-.btn1:hover{
+.btn1:hover {
     color: white;
     background-color: #208824;
 }
 
-.what-students-say{
+.btn2:hover {
+    color: white;
+    background-color: #208824;
+}
+
+.what-students-say {
     height: 640px;
     background-color: #EDECEC;
     margin-top: 60px;
 }
 
-.title-what-student-say{
+.title-what-student-say {
     text-align: center;
     margin-top: -524px;
     font-size: 48px;
 }
 
-.mini-description{
+.mini-description {
     text-align: center;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     text-decoration: underline;
 }
 
-.reviews{
+.reviews {
     width: 510px;
     height: 191px;
     background-color: white;
@@ -243,21 +309,21 @@ ul{
     margin-top: 70px;
 }
 
-.student-1{
+.student-1 {
     font-family: "Open Sans" sans-serif;
     margin-right: 70px;
 }
 
-.student-descr-1{
+.student-descr-1 {
     text-align: left;
     font-family: "Montserrat", sans-serif;
 }
 
-.student-1-name{
+.student-1-name {
     color: #208824;
 }
 
-.reviews-2{
+.reviews-2 {
     width: 510px;
     height: 191px;
     background-color: white;
@@ -266,77 +332,77 @@ ul{
     margin-top: -165px;
 }
 
-.student-descr-2{
+.student-descr-2 {
     text-align: left;
     font-family: "Montserrat", sans-serif;
 }
 
-.rating-1{
+.rating-1 {
     margin-top: -30px;
     margin-right: 140px;
     color: orange;
     font-size: 30px;
 }
 
-.rating-2{
+.rating-2 {
     color: orange;
     font-size: 30px;
     margin-top: -30px;
     margin-left: -210px;
 }
 
-.linegap-green-2{
+.linegap-green-2 {
     margin-top: 180px;
     background-color: #208824;
     height: 10px;
 }
 
-.linegap-black-1{
+.linegap-black-1 {
     margin-top: 0px;
     margin-bottom: 20px;
     background-color: black;
     height: 10px;
 }
 
-.events{
+.events {
     height: 600px;
     background-color: #D0D0D0;
 }
 
-.event-Title h1{
+.event-Title h1 {
     font-size: 30px;
     margin-left: 380px;
     margin-top: -50px;
     display: flex;
 }
 
-.event-1-descr{
+.event-1-descr {
     margin-left: 400px;
 }
 
-.event-2-descr{
+.event-2-descr {
     margin-left: 826px;
 }
 
-.event-3-descr{
+.event-3-descr {
     margin-left: 1220px;
 }
 
 
-.linegap-green-3{
+.linegap-green-3 {
     margin-top: 80px;
     background-color: #208824;
     height: 10px;
 }
 
-.linegap-black-2{
+.linegap-black-2 {
     margin-top: 0px;
     margin-bottom: 20px;
     background-color: black;
     height: 5px;
 }
 
-.img-2{
+.img-2 {
     margin-top: 50px;
     border: 1px solid white;
     border-radius: 30px;
@@ -344,7 +410,7 @@ ul{
     margin-left: 880px;
 }
 
-.footer-schoolname{
+.footer-schoolname {
     font-size: 19px;
     text-align: center;
     margin-top: 10px;
@@ -354,16 +420,16 @@ ul{
     font-weight: 16px;
 }
 
-.white-line-1{
+.white-line-1 {
     border: 1px solid white;
     width: 280px;
     align-items: center;
     justify-content: center;
     margin-left: 810px;
     margin-top: 20px;
-} 
+}
 
-.connect{
+.connect {
     text-align: center;
     font-size: 18px;
     color: white;
@@ -371,120 +437,179 @@ ul{
 
 }
 
-.insta{
+.insta {
     margin-left: 880px;
     margin-top: 20px;
 }
 
-.fb{
+.fb {
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.yt{
+.yt {
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.white-line-2{
+.white-line-2 {
     border: 1px solid white;
     width: 185px;
     margin-left: 855px;
     margin-top: 90px;
-} 
-
-.footer-nav{
-    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
-.footer-nav li{
-    text-align: center;
-    margin-right: 3px;
-    margin-left: 0px;
-    border-right: 1px solid white;
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.all-rights-reserved{
+.all-rights-reserved {
     text-align: center;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
+    margin-left: 70px;
 }
 
-.profile-pic-1{
-    margin-top: 15px; 
+.profile-pic-1 {
+    margin-top: 15px;
     margin-right: 330px;
 }
 
-.footer-navbar{
-    justify-content: center;
+.foot-nav li{
+    display: inline;
+    margin-right: 2px;
+    border-right: 1px solid white;
+    padding: 0 10px;
 }
 
-@media only screen and (max-width: 412px), screen and (max-height: 915px){
-    *{
+.foot-nav a{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-family: 13px;
+    font-weight: 600;
+}
+
+.foot-nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+.foot-nav{
+    margin-left: 80px;
+}
+
+.foot-nav li:last-child {
+    border-right: none;
+}
+
+@media only screen and (max-width: 412px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: content-box;
     }
-    .schoolBanner{
-       width: 93%;
-    } 
-    .schoolLogo{
-        margin-left: 150px;
+
+    .schoolBanner {
+        display: none;
+    }
+    nav a:hover {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        display: none;
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.8s ease-out;
+        margin-right: 0;
+        margin-left: 0;
     }
 
-    .schoolName, .adr, .green-line-left, .black-line-center{
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+
+    }
+    nav{
+        position: fixed;
+        width: 89.2%;
+        margin-top: 0px;
+        padding-right: 20px;
+    }
+
+    .close-sidebar-button{
+        padding-left: 70%;
+
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        display: block ;
+        margin-right: 0;
+        margin-left: 0;
+        color: white;
+    }
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+    }
+
+    .open-sidebar-button{
+        padding-top: 8px;
+        padding-left: 90%;
+    }
+
+    .schoolLogo {
+        /* margin-left: 20px;
+        border: 3px solid red;
+        height: 60px; */
+        display: none;
+
+    }
+
+    .schoolName,
+    .adr,
+    .green-line-left,
+    .black-line-center {
         display: none;
     }
 
-    li{
-        display: block;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        margin-right: 15px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    
-    ul{
-        text-align: left;
-    }
-    
-    .nav-bar{
-        position: fixed;
-        width: 93%;
-        background-color: black;
-        padding-top: 10px;
-        margin-top: 105px;
-    }
-    
-    .content{
+
+    .content {
         font-size: 1px;
-        margin-right:80px;
+        margin-right: 80px;
     }
-    
-    .latest-news{
+
+    .latest-news {
         height: 1500px;
         background-color: #D0D0D0;
         margin-top: 10px;
     }
 
-    .news-Title{
+    .news-Title {
         margin-top: -1300px;
         margin-left: -350px;
         margin-bottom: 50px;
     }
 
-    .news-2, .event-2{
+    .news-2,
+    .event-2 {
         object-fit: cover;
         border-radius: 20px;
         margin-left: 380px;
         margin-top: -5px;
     }
 
-    .news-2-descr{
+    .news-2-descr {
         color: black;
         font-family: "Open Sans", sans-serif;
         text-decoration: none;
@@ -493,14 +618,15 @@ ul{
         margin-top: -3px;
         font-size: 15px;
     }
-    
-    .news-3, .event-3{
+
+    .news-3,
+    .event-3 {
         object-fit: cover;
         border-radius: 20px;
         margin-left: 380px;
         margin-top: -10px;
     }
-    
+
     .news-3-descr {
         margin-left: 480px;
         margin-top: -5px;
@@ -511,102 +637,115 @@ ul{
         font-size: 15px;
     }
 
-    .undernews-Title{
+    .undernews-Title {
         display: none;
     }
 
-    .btn{
+    .btn {
         margin-left: 350px;
     }
 
-    .event-1{
+    .event-1 {
         margin-top: 100px;
         margin-left: 40px;
     }
 
-    .event-2{
+    .event-2 {
         margin-top: 25px;
         margin-left: 40px;
     }
 
-    .event-3{
+    .event-3 {
         margin-top: 25px;
         margin-left: 40px;
     }
 
-    .event-Title h1{
+    .event-Title h1 {
         font-size: 30px;
         margin-left: 40px;
         margin-top: -1250px;
         display: flex;
+ 
+
     }
 
-    .events{
+    .events {
         height: 1300px;
+
+
     }
 
-    .reviews{
+    .reviews {
         margin-left: 20px;
         margin-top: 30px;
         height: 250px;
         width: 370px;
+
+
     }
 
-    .reviews-2{
+    .reviews-2 {
         display: none;
     }
-    
-    .student-descr-2{
+
+    .student-descr-2 {
         display: none;
+
     }
-    
-    .rating-1{
+
+    .rating-1 {
         margin-top: -30px;
         margin-right: 190px;
         color: orange;
         font-size: 30px;
         margin-left: 80px;
-    }
-    
-    .rating-2{
-        display: none;
+
     }
 
-    .student-descr-1{
+    .rating-2 {
+        display: none;
+ 
+
+    }
+
+    .student-descr-1 {
         text-align: left;
         font-family: "Montserrat", sans-serif;
         font-size: 5px;
+        margin-top: -10px;
     }
 
-    .student-1-name{
+    .student-1-name {
         color: #208824;
-        margin-left: 50px;
+        margin-left: 80px;
+        width: 250px;
     }
 
-    .profile-pic-1{
+    .profile-pic-1 {
         margin-left: 25px;
+        margin-bottom: -20px;
     }
-    
-    .btn2{
+
+    .btn2 {
         color: black;
-        margin-left: -45px;
+        margin-left: -20px;
     }
 
-    .event-1-descr{
+    .event-1-descr {
         margin-left: 60px;
-    }
+   }
 
-    .event-2-descr{
+    .event-2-descr {
         margin-left: 80px;
         margin-top: 1px;
     }
 
-    .event-3-descr{
-        margin-left: 80px;  
-        margin-top: 1px; 
+    .event-3-descr {
+        margin-left: 80px;
+        margin-top: 1px;
     }
 
-    .img-2{
+    .img-2 {
         margin-top: 50px;
         border: 1px solid white;
         border-radius: 30px;
@@ -614,27 +753,32 @@ ul{
         margin-left: 140px;
     }
 
-    .white-line-1{
+    .white-line-1 {
         margin-left: 70px;
     }
 
-    .white-line-2{
+    .white-line-2 {
         margin-left: 115px;
     }
 
-    .insta{
+    .insta {
         margin-left: 140px;
     }
 
-    .footer-nav{
-        display: none;
-    }
-    
-    .footer-nav li{
-       display: none;
+    .all-rights-reserved {
+        margin-top: 100px;
+        margin-right: 50px;
     }
 
-    .all-rights-reserved{
-        margin-top: 80px;
+    .green-line-left{
+        display: none;
+    }
+
+    .green-line-right{
+        display: none;
+    }
+
+    .foot-nav{
+        display: none;
     }
 }
