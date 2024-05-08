@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: merriweather;
+
+}
+
+/* SCHOOOL BANNER */
+/* SCHOOOL BANNER */
+.schoolBanner {
+    height: 105px;
+    background-color: #F8F8F8;
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.schoolLogo {
+    margin-left: 360px;
+    display: flex;
+}
+
+.schoolName {
+    font-family: "DM Serif Text", sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 19px;
+    display: flex;
+}
+
+.adr {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 600px;
+    font-size: 19px;
+    font-family: "DM Serif Text", sans-serif;
+    display: flex;
+}
+
+.address {
+    text-align: center;
+}
+
+/* SCHOOOL BANNER */
+/* SCHOOOL BANNER */
+
+
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+nav {
+    height: 60px;
+    background-color: rgb(37, 34, 34);
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 550;
+}
+
+nav a:hover {
+    background-color: green;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+nav svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    padding-top: 8px;
+    display: none;
+}
+
+.green-line-left {
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 0;
+}
+
+.green-line-right {
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 1600px;
+}
+
+/* NAVIGATION BAR */
+/* NAVIGATION BAR */
+
+
+/* PROGRAM/COURSE */
+/* PROGRAM/COURSE */
+.program-cover {
+    height: 600px;
+    display: flex;
+}
+
+.gap {
+    padding-top: 68px;
+}
+
+.course {
+    margin: 0 0 0 0;
+    background-color: white;
+}
+
+#stext1 {
+    font-size: 30px;
+    margin-left: 235px;
+    margin-top: 100px;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.undernews-Title1 {
+    height: 7px;
+    width: 80px;
+    background-color: black;
+    margin-left: 235px;
+    margin-top: 10px;
+}
+
+.sidetext1 {
+    height: 50px;
+    width: 660px;
+    background-color: #015704;
+    margin-left: 62%;
+    margin-top: -3%;
+}
+
+.sidetext1 h1 {
+    color: white;
+    font-size: 28px;
+    padding-top: 7px;
+    margin-left: 2%;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.side-img1 {
+    height: 270px;
+    width: 660px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 62%;
+}
+
+.ched-courses img{
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: -220px;
+    margin-bottom: 0;
+    margin-left: 235px;
+
+}
+
+.ched-list {
+    width: 655px;
+    background-color: white;
+    margin-left: 66%;
+    margin-top: -12%;
+    display: flex;
+}
+
+.ched-list ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.ched-link {
+    height: 40px;
+    width: 400px;
+    background-color: #015704;
+    margin-left: 70%;
+    margin-top: 20px;
+}
+
+.ched-link a {
+    color: white;
+    font-size: 20px;
+    margin-left: 30%;
+    padding-top: 5px;
+}
+
+.chedreg {
+    font-size: 21px;
+    margin-left: 73%;
+}
+
+#stext2 {
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.undernews-Title2 {
+    height: 7px;
+    width: 90px;
+    background-color: black;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+.tesda-courses img{
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: -220px;
+    margin-bottom: 0;
+    margin-left: 235px;
+}
+.sidetext2 {
+    height: 50px;
+    width: 660px;
+    background-color: #015704;
+    margin-left: 62%;
+    margin-top: 20px;
+}
+
+.sidetext2 h1 {
+    color: white;
+    font-size: 28px;
+    padding-top: 5px;
+    margin-left: 42%;
+}
+
+.side-img2 {
+    height: 270px;
+    width: 660px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 62%;
+}
+
+.tesda-list {
+    width: 655px;
+    background-color: white;
+    margin-left: 66%;
+    margin-top: -26%;
+    display: flex;
+}
+
+.tesda-list ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.tesda-link {
+    height: 40px;
+    width: 400px;
+    background-color: #015704;
+    margin-left: 70%;
+    margin-top: 20px;
+}
+
+.tesda-link a {
+    color: white;
+    font-size: 20px;
+    margin-left: 30%;
+    padding-top: 5px;
+}
+
+.tesdareg {
+    font-size: 21px;
+    margin-left: 73%;
+}
+
+.linegap-green-3 {
+    background-color: #208824;
+    height: 10px;
+}
+
+.linegap-black-2 {
+    background-color: rgb(37, 34, 34);
+    height: 20px;
+}
+
+.divider1 {
+    margin-top: 5%;
+}
+
+.tesda-courses {
+    height: 80vh;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: -200px;
+    margin-left: 20px;
+
+}
+
+.divider2 {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.title-about {
+    margin-top: -120px;
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "DM Serif Text", sans-serif;
+    color: white;
+}
+
+.vertical-line {
+    height: 40px;
+    width: 4px;
+    background-color: #208824;
+    margin-top: -50px;
+    margin-left: 180px;
+}
+
+/* PROGRAM/COURSE */
+/* PROGRAM/COURSE */
+
+
+
+/* FOOTER CODES */
+/* FOOTER CODES */
+/* FOOTER CODES */
+.footer-schoolname {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1 {
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+}
+
+.connect {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta {
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2 {
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+}
+
+.footer-nav {
+    margin-top: 80px;
+}
+
+.footer-nav li {
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 0px;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.all-rights-reserved {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+
+.footer-navbar {
+    justify-content: center;
+}
+
+.img-2 {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 880px;
+}
+
+.footer-schoolname {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1 {
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+}
+
+.connect {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta {
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2 {
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.foot-nav li {
+    display: inline;
+    margin-right: 2px;
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.foot-nav a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-family: 13px;
+    font-weight: 600;
+}
+
+.foot-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.foot-nav {
+    margin-left: 80px;
+}
+
+.foot-nav li:last-child {
+    border-right: none;
+}
+
+.all-rights-reserved {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    margin-left: 70px;
+}
+
+/* FOOTER CODES */
+/* FOOTER CODES */
+/* FOOTER CODES */
+
+
+@media only screen and (max-width: 412px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        border: 2px solid red; 
+    }
+    
+    .schoolName,
+    .adr,
+    .address,
+    .schoolName,
+    .schoolBanner,
+    .green-line-left,
+    .green-line-right {
+        display: none;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+
+    }
+
+    nav {
+        position: fixed;
+        width: 34%;
+        margin-top: 0px;
+        padding-right: 20px;
+
+    }
+
+    nav a:hover {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .open-sidebar-button,
+    .close-sidebar-button {
+        display: block;
+    }
+
+    #sidebar-active:checked~.links-container {
+        display: flex;
+    }
+
+    .open-sidebar-button {
+        padding-top: 8px;
+        padding-left: 85%;
+    }
+
+    .close-sidebar-button {
+        padding-left: 80%;
+
+    }
+
+    .white-line-1 {
+        margin-left: 70px;
+
+    }
+
+    .white-line-2 {
+        margin-left: 115px;
+
+    }
+
+    .insta {
+        margin-left: 140px;
+
+    }
+
+    .all-rights-reserved {
+        margin-top: 80px;
+
+    }
+
+/* PRORAM SECTION */
+
+    .program-cover {
+        height: 500px;
+        display: flex;
+    }
+    
+    .gap {
+        padding-top: 0px;
+    }
+    
+    .course {
+        margin: 0 0 0 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #stext1 {
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-family: "DM Serif Text", sans-serif;
+    }
+    
+    .undernews-Title1 {
+        height: 7px;
+        width: 80px;
+        background-color: black;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    .sidetext1 {
+        height: 50px;
+        width: 660px;
+        background-color: #015704;
+        margin-left: 0;
+        margin-top: 0%;
+    }
+    
+    .sidetext1 h1 {
+        color: white;
+        font-size: 28px;
+        padding-top: 0;
+        margin-left: 0;
+        font-family: "DM Serif Text", sans-serif;
+    }
+    
+    .side-img1 {
+        height: 200px;
+        width: 200px;
+        display: block;
+        background-repeat: no-repeat;
+        margin-left: 0;
+    }
+    
+    .ched-courses img{
+        height: 100px;
+        display: block;
+        background-repeat: no-repeat;
+        margin: 10 10 10 10;
+        width: 80%;
+    
+    }
+    
+    .ched-list {
+        width: 500px;
+        background-color: white;
+        margin-left: 0%;
+        margin-top: 0%;
+        display: flex;
+    }
+    
+    .ched-list ul li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    
+    .ched-link {
+        height: 40px;
+        width: 400px;
+        background-color: #015704;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    
+    .ched-link a {
+        color: white;
+        font-size: 20px;
+        margin-left: 0;
+        padding-top: 5px;
+    }
+    
+    .chedreg {
+        font-size: 21px;
+        margin-left: 0;
+    }
+    
+    #stext2 {
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-family: "DM Serif Text", sans-serif;
+    }
+    
+    .undernews-Title2 {
+        height: 7px;
+        width: 90px;
+        background-color: black;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    .sidetext2 {
+        height: 50px;
+        width: 660px;
+        background-color: #015704;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    
+    .sidetext2 h1 {
+        color: white;
+        font-size: 28px;
+        padding-top: 5px;
+        margin-left: 0%;
+    }
+    
+    .side-img2 {
+        height: 270px;
+        width: 660px;
+        display: block;
+        background-repeat: no-repeat;
+        margin-left: 0;
+    }
+    .tesda-courses img{
+        margin: 10 10 10 10;
+        height: 100px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    .tesda-list {
+        width: 655px;
+        background-color: white;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+    }
+    
+    .tesda-list ul li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .tesda-link {
+        height: 40px;
+        width: 400px;
+        background-color: #015704;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    
+    .tesda-link a {
+        color: white;
+        font-size: 20px;
+        margin-left: 0%;
+        padding-top: 5px;
+    }
+    
+    .tesdareg {
+        font-size: 21px;
+        margin-left: 0;
+    }
+    
+    .linegap-green-3 {
+        background-color: #208824;
+        height: 10px;
+    }
+    
+    .linegap-black-2 {
+        background-color: rgb(37, 34, 34);
+        height: 20px;
+    }
+    
+    .divider1 {
+        margin-top: 0;
+    }
+    
+    .tesda-courses {
+        display: block;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+        margin-left: 0px;
+    
+    }
+    
+    .divider2 {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+    
+    .title-about {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-weight: 400;
+        font-size: 45px;
+        font-family: "DM Serif Text", sans-serif;
+        color: white;
+    }
+    
+    .vertical-line {
+        height: 40px;
+        width: 4px;
+        background-color: #208824;
+        margin-top: -50px;
+        margin-left: 180px;
+    }
+
+
+}
