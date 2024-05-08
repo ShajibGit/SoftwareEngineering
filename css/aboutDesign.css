@@ -41,12 +41,12 @@ html {
     background-color: #208824;
     position: fixed;
     margin-top: 120px;
-    margin-left: 1550px;
+    margin-left: 1600px;
 }
 
 nav {
     height: 60px;
-    background-color: black;
+    background-color: rgb(37, 34, 34);
     display: block;
     justify-content: flex-end;
     align-items: center;
@@ -72,8 +72,8 @@ nav a {
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 550;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
 }
@@ -84,8 +84,8 @@ nav a:hover {
 
 nav a:hover {
     color: white;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
     text-decoration: none;
 
 }
@@ -309,7 +309,7 @@ nav svg {
 
 .black-border-title {
     height: 45px;
-    background-color: black;
+    background-color: rgb(37, 34, 34);
     width: 100%;
 
 }
@@ -333,7 +333,7 @@ nav svg {
 
 .mission,
 .vision {
-    color: black;
+    background-color: white;
     width: 49.85%;
     font-weight: 400;
     font-size: 20px;
@@ -344,7 +344,7 @@ nav svg {
 }
 
 .vertical-black-bar {
-    background-color: black;
+    background-color: rgb(37, 34, 34);
     height: 250px;
     width: 5px;
     align-items: center;
@@ -374,7 +374,7 @@ nav svg {
 
 .black-border-title {
     height: 45px;
-    background-color: black;
+    background-color: rgb(37, 34, 34);
 }
 
 .east-hymn {
@@ -408,7 +408,7 @@ nav svg {
 .linegap-black-2 {
     margin-top: 0px;
     margin-bottom: 20px;
-    background-color: black;
+    background-color: rgb(37, 34, 34);
     height: 30px;
 }
 
@@ -529,6 +529,10 @@ nav svg {
     }
 
     .schoolBanner {
+        display: none;
+    }
+    
+    .green-line-left, .green-line-right{
         display: none;
     }
 
@@ -904,11 +908,5 @@ nav svg {
 
     }
 
-    .green-line-right{
-        display: none;
-    }
 
-    .green-line-left{
-        display: none;
-    }
 }
