@@ -1,0 +1,305 @@
+:root {
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: merriweather;
+
+}
+
+.schoolBanner {
+    height: 105px;
+    background-color: #F8F8F8;
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.green-line-left{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 0;
+}
+.green-line-right{
+    width: 20%;
+    height: 15px;
+    background-color: #208824;
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 1600px;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav a:hover {
+    background-color: green;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+nav svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    padding-top: 8px;
+    display: none;
+}
+
+.schoolLogo {
+    margin-left: 360px;
+    display: flex;
+}
+
+.schoolName {
+    font-family: "DM Serif Text", sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 19px;
+    display: flex;
+}
+
+.adr {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 600px;
+    font-size: 19px;
+    font-family: "DM Serif Text", sans-serif;
+    display: flex;
+}
+
+.address {
+    text-align: center;
+}
+
+.about-cover {
+    height: 600px;
+    display: flex;
+}
+
+.title-news {
+    margin-top: -120px;
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "DM Serif Text", sans-serif;
+    color: white;
+}
+
+.vertical-line {
+    height: 40px;
+    width: 4px;
+    background-color: #208824;
+    margin-top: -50px;
+    margin-left: 180px;
+}
+
+.news-section{
+    background-color: #EDECEC;
+    height: 1900px;
+    margin-top: 70px;
+}
+
+.img-news{
+    height: 221px;
+    margin-top: 100px;
+}
+
+.news-title{
+    width: 275px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+}
+
+.news-desc{
+    width: 260px;
+    margin-top: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.read-news{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.date{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    margin-top: 80px;
+}
+
+.container{
+    display: flex;
+}
+
+.news-section-2{
+    margin-left: 120px;
+}
+
+.news-section-3{
+    margin-left: 120px;
+}
+
+.linegap-green-3 {
+    margin-top: 200px;
+    background-color: #208824;
+    height: 10px;
+}
+
+.linegap-black-2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: black;
+    height: 5px;
+}
+
+.img-2 {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 880px;
+}
+
+.footer-schoolname {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 16px;
+}
+
+.white-line-1 {
+    border: 1px solid white;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 20px;
+}
+
+.connect {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.insta {
+    margin-left: 880px;
+    margin-top: 20px;
+}
+
+.fb {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.yt {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white-line-2 {
+    border: 1px solid white;
+    width: 185px;
+    margin-left: 855px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.foot-nav li{
+    display: inline;
+    margin-right: 2px;
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.foot-nav a{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-family: 13px;
+    font-weight: 600;
+}
+
+.foot-nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+.foot-nav{
+    margin-left: 80px;
+}
+
+.foot-nav li:last-child {
+    border-right: none;
+}
+
+.all-rights-reserved {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    margin-left: 70px;
+}
