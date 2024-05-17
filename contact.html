@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Events</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About EPCST</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,19 +16,33 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/program.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <style>
-        .program-cover {
+        .about-cover {
             background-image: url("footer/footer-bg 5.png");
+            display: flex;
+        }
+        .contact-bg {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            height: 800px;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        .home-champions-banner {
+            height: 548px;
+            object-fit: contain;
         }
 
-        .side-img1 {
-            background-image: url("images/course-side.jfif");
+        .img-home-champ {
+            height: 725px;
+            object-fit: fill;
         }
 
-        .side-img2 {
-            background-image: url("images/course-side.jfif");
+        .school-picture {
+            background-image: url("images/school-pic.jpg");
+            display: flex;
         }
 
         .footer {
@@ -34,10 +52,10 @@
             object-fit: fill;
         }
     </style>
+
 </head>
 
 <body>
-<!-- SCHOOL BANNER -->
     <div class="schoolBanner">
         <div class="schoolLogo">
             <img src="images/websiteLogo.png" alt="epcst logo" style="height: 102px; width: 110px;" class="mobile-Logo">
@@ -55,9 +73,7 @@
             </div>
         </div>
     </div>
-<!-- SCHOOL BANNER -->
 
-<!-- NAVBAR -->
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
@@ -80,89 +96,43 @@
             <a href="contact.html">Contact Us</a>
         </div>
     </nav>
+
     <div class="green-line-left"></div>
     <div class="green-line-right"></div>
-<!-- NAVBAR -->
 
-<!-- PRORAM/COURSES -->
-    <div class="program-cover"></div>
-    <h1 class="title-about">PROGRAMS</h1>
+
+    <div class="about-cover"></div>
+    <h1 class="title-news">CONTACT US</h1>
     <div class="vertical-line"></div>
+    <div class="linegap-green-3"></div>
+    <div class="linegap-black-2"></div>
 
-    <div class="gap">
-        <div class="linegap-green-3"></div>
-        <div class="linegap-black-2"></div>
+    <div class="contact-bg">
+    <div class="contact-box">
+        <form>
+            <input type="text" class="input-field1" placeholder="Full Name">
+            <input type="email" class="input-field2" placeholder="Email">
+            <input type="number" class="input-field3" placeholder="Phone Number">
+            <input type="text" class="input-field4" placeholder="Country">
+            <a>College/Tesda/School</a>
+            <select class="input-field">
+                <option value=""disabled selected hidden></option>
+                <option value="volvo">College</option>
+                <option value="saab">Tesda</option>
+                <option value="fiat">Senior Highschool</option>
+              </select>
+            <input type="text" class="input-field" placeholder="Subject">
+            <textarea type="text" class="input-field textarea-field" placeholder="Message"></textarea>
+            <button type="button" class="btn"> SUBMIT</button>
+        </form>
+        
     </div>
-
-
-    <div class="course">
-        <h1 id="stext1"><b>CHED</b> Courses</h1>
-        <div class="undernews-Title1"></div>
-
-        <div class="sidetext1">
-            <h1>COURSES</h1>
-        </div>
-        <div class="side-img1"></div>
-        <div class="ched-courses">
-            <img src="images/ched.jfif" alt="ched" style="height: 500px;">
-        </div>
-
-        <div class="ched-list">
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-            </ul>
-        </div>
-        <div class="ched-link">
-            <a href="https://www.facebook.com/EPCST"><b>Register @EPCST</b></a>
-        </div>
-        <div class="chedreg">
-            <a><b>ONLINE REGISTRATION LINK</b></a>
-        </div>
-        <div class="divider1">
-            <div class="linegap-green-3"></div>
-            <div class="linegap-black-2"></div>
-        </div>
-
-
-
-        <h1 id="stext2"><b>TESDA</b> Courses</h1>
-        <div class="undernews-Title2"></div>
-
-        <div class="sidetext1">
-            <h1>COURSES</h1>
-        </div>
-        <div class="side-img2"></div>
-        <div class="tesda-courses">
-            <img src="images/tesda.jfif" alt="tesda" style="height: 500px;">
-        </div>
-
-        <div class="tesda-list">
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, praesentium.</li>
-            </ul>
-        </div>
-        <div class="tesda-link">
-            <a href="https://www.facebook.com/EPCST"><b>Register @EPCST</b></a>
-        </div>
-        <div class="tesdareg">
-            <a><b>ONLINE REGISTRATION LINK</b></a>
-        </div>
     </div>
-<!-- PRORAM/COURSES -->
+    
+    
+    <div class="linegap-green-3"></div>
+    <div class="linegap-black-2"></div>
 
-<!-- FOOTER -->
-    <div class="divider2">
-        <div class="linegap-green-3"></div>
-        <div class="linegap-black-2"></div>
-    </div>
     <div class="footer">
         <div class="footer-info">
             <a href="index.html"><img src="images/websiteLogo.png" alt="epcst logo" style="height: 129px; width: 129px;"
@@ -192,8 +162,8 @@
             <p class="all-rights-reserved">Copyright ©2024. All Rights Reserved Eastwoods Professional College of
                 Science & Technology | Bataan PH</p>
         </div>
+
     </div>
-<!-- FOOTER -->
 </body>
 
 </html>
